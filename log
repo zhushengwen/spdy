@@ -1,0 +1,41 @@
+make  all-recursive
+make[1]: Entering directory `/tmp/spdylay'
+Making all in lib
+make[2]: Entering directory `/tmp/spdylay/lib'
+Making all in includes
+make[3]: Entering directory `/tmp/spdylay/lib/includes'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/spdylay/lib/includes'
+make[3]: Entering directory `/tmp/spdylay/lib'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/tmp/spdylay/lib'
+make[2]: Leaving directory `/tmp/spdylay/lib'
+Making all in src
+make[2]: Entering directory `/tmp/spdylay/src'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/tmp/spdylay/src'
+Making all in tests
+make[2]: Entering directory `/tmp/spdylay/tests'
+Making all in testdata
+make[3]: Entering directory `/tmp/spdylay/tests/testdata'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/tmp/spdylay/tests/testdata'
+make[3]: Entering directory `/tmp/spdylay/tests'
+make[3]: Nothing to be done for `all-am'.
+make[3]: Leaving directory `/tmp/spdylay/tests'
+make[2]: Leaving directory `/tmp/spdylay/tests'
+Making all in examples
+make[2]: Entering directory `/tmp/spdylay/examples'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/tmp/spdylay/examples'
+Making all in doc
+make[2]: Entering directory `/tmp/spdylay/doc'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/tmp/spdylay/doc'
+Making all in python
+make[2]: Entering directory `/tmp/spdylay/python'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/tmp/spdylay/python'
+make[2]: Entering directory `/tmp/spdylay'
+make[2]: Leaving directory `/tmp/spdylay'
+make[1]: Leaving directory `/tmp/spdylay'

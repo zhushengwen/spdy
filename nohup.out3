@@ -1,0 +1,1000 @@
+[INFO] Resolving backend address
+       (shrpx.cc:1192)
+[INFO] Address resolution for ga2.line.naver.jp succeeded: 203.104.153.1
+       (shrpx.cc:110)
+[INFO] Listening on ::1, port 443
+       (shrpx.cc:191)
+[INFO] Listening on 127.0.0.1, port 443
+       (shrpx.cc:191)
+[INFO] Entering event loop
+       (shrpx.cc:308)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 09:21:50 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13a5b20] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13a5b20] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x13bb690] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x13bb690] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x13bb690] HTTP request headers
+GET /authct/v1/keys/naver HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+User-Agent: Fiddler
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x12a8f10] Attaching to DOWNSTREAM:0x13bada0
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [UPSTREAM:0x13bb690] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] Connecting to downstream server
+       (shrpx_spdy_session.cc:393)
+[INFO] [DSPDY:0x136a320] Connection established
+       (shrpx_spdy_session.cc:249)
+[INFO] [DSPDY:0x136a320] Negotiated next protocol: spdy/2
+       (shrpx_spdy_session.cc:1050)
+[INFO] [DCONN:0x12a8f10] HTTP request headers
+:scheme: https
+:path: /authct/v1/keys/naver
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+User-Agent: Fiddler
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=1
+content-length: 320
+content-type: application/json;charset=ISO-8859-1
+p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+server: legy
+:status: 200
+:version: HTTP/1.1
+x-lcr: 255
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13bada0] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x13bb690] HTTP response headers
+HTTP/1.0 200 OK
+Content-Length: 320
+Content-Type: application/json;charset=ISO-8859-1
+P3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Server: legy
+X-Lcr: 255
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 09:21:51 2017] 200 0 "GET /authct/v1/keys/naver HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=1 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13bada0] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x12a8f10] Detaching from DOWNSTREAM:0x13bada0
+       (shrpx_spdy_downstream_connection.cc:118)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Pooling downstream connection DCONN:0x12a8f10
+       (shrpx_client_handler.cc:294)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13bada0] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13bada0] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [DCONN:0x12a8f10] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x12a8f10] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+::1 [Mon Jan 16 09:22:23 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13bb910] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13bb910] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13bb910] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x13bb610] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x13bb610] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x13bb610] HTTP request headers
+GET /authct/v1/keys/naver HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+User-Agent: Fiddler
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13bb910] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x13caf90] Attaching to DOWNSTREAM:0x13bada0
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x13caf90] HTTP request headers
+:scheme: https
+:path: /authct/v1/keys/naver
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+User-Agent: Fiddler
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x13bb610] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=3
+content-length: 320
+content-type: application/json;charset=ISO-8859-1
+p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13bada0] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x13bb610] HTTP response headers
+HTTP/1.0 200 OK
+Content-Length: 320
+Content-Type: application/json;charset=ISO-8859-1
+P3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+::1 [Mon Jan 16 09:22:23 2017] 200 0 "GET /authct/v1/keys/naver HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=3 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13bada0] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x13caf90] Detaching from DOWNSTREAM:0x13bada0
+       (shrpx_spdy_downstream_connection.cc:118)
+[INFO] [CLIENT_HANDLER:0x13bb910] Pooling downstream connection DCONN:0x13caf90
+       (shrpx_client_handler.cc:294)
+[INFO] [CLIENT_HANDLER:0x13bb910] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13bada0] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13bada0] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [DCONN:0x13caf90] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x13caf90] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13bb910] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [DSPDY:0x136a320] EOF
+       (shrpx_spdy_session.cc:267)
+[INFO] [DSPDY:0x136a320] Disconnecting
+       (shrpx_spdy_session.cc:72)
+[INFO] [DSPDY:0x136a320] Closing fd=11
+       (shrpx_spdy_session.cc:103)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 18:20:54 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13a5b20] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13a5b20] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x13a6400] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x13a6400] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x13a6400] HTTP request headers
+GET / HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x1370850] Attaching to DOWNSTREAM:0x13bbe10
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [UPSTREAM:0x13a6400] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] Connecting to downstream server
+       (shrpx_spdy_session.cc:393)
+[INFO] [DSPDY:0x136a320] Connection established
+       (shrpx_spdy_session.cc:249)
+[INFO] [DSPDY:0x136a320] Negotiated next protocol: spdy/2
+       (shrpx_spdy_session.cc:1050)
+[INFO] [DCONN:0x1370850] HTTP request headers
+:scheme: https
+:path: /
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=1
+server: legy
+:status: 404
+:version: HTTP/1.1
+x-lcr: 255
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13bbe10] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x13a6400] HTTP response headers
+HTTP/1.0 404 Not Found
+Server: legy
+X-Lcr: 255
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 18:20:54 2017] 404 0 "GET / HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=1 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13bbe10] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x1370850] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x1370850] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13bbe10] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13bbe10] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x13a5b20] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+::1 [Mon Jan 16 18:22:01 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13cee50] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13cee50] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13cee50] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x1330800] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x1330800] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x1330800] HTTP request headers
+GET / HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13cee50] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x13bbd40] Attaching to DOWNSTREAM:0x13ce870
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x13bbd40] HTTP request headers
+:scheme: https
+:path: /
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x1330800] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=3
+server: legy
+:status: 404
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13ce870] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x1330800] HTTP response headers
+HTTP/1.0 404 Not Found
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+::1 [Mon Jan 16 18:22:01 2017] 404 0 "GET / HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=3 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13ce870] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x13bbd40] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x13bbd40] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13cee50] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13ce870] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13ce870] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x13cee50] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [DSPDY:0x136a320] EOF
+       (shrpx_spdy_session.cc:267)
+[INFO] [DSPDY:0x136a320] Disconnecting
+       (shrpx_spdy_session.cc:72)
+[INFO] [DSPDY:0x136a320] Closing fd=11
+       (shrpx_spdy_session.cc:103)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 18:25:47 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13a6300] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13a6300] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13a6300] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x13a6300] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x12e85c0] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x12e85c0] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x12e85c0] HTTP request headers
+GET /authct/v1/keys/naver HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13a6300] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x12efc00] Attaching to DOWNSTREAM:0x13cd050
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [UPSTREAM:0x12e85c0] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] Connecting to downstream server
+       (shrpx_spdy_session.cc:393)
+[INFO] [DSPDY:0x136a320] Connection established
+       (shrpx_spdy_session.cc:249)
+[INFO] [DSPDY:0x136a320] Negotiated next protocol: spdy/2
+       (shrpx_spdy_session.cc:1050)
+[INFO] [DCONN:0x12efc00] HTTP request headers
+:scheme: https
+:path: /authct/v1/keys/naver
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: Hm_lvt_1678c59b924ec8c2d95c488ced08cd31=1482196813
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=1
+content-encoding: gzip
+content-length: 251
+content-type: application/json;charset=ISO-8859-1
+p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+server: legy
+:status: 200
+:version: HTTP/1.1
+x-lcr: 255
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cd050] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x12e85c0] HTTP response headers
+HTTP/1.0 200 OK
+Content-Encoding: gzip
+Content-Length: 251
+Content-Type: application/json;charset=ISO-8859-1
+P3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Server: legy
+X-Lcr: 255
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 18:25:48 2017] 200 0 "GET /authct/v1/keys/naver HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=1 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cd050] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x12efc00] Detaching from DOWNSTREAM:0x13cd050
+       (shrpx_spdy_downstream_connection.cc:118)
+[INFO] [CLIENT_HANDLER:0x13a6300] Pooling downstream connection DCONN:0x12efc00
+       (shrpx_client_handler.cc:294)
+[INFO] [CLIENT_HANDLER:0x13a6300] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cd050] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cd050] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [DCONN:0x12efc00] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x12efc00] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13a6300] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [DSPDY:0x136a320] EOF
+       (shrpx_spdy_session.cc:267)
+[INFO] [DSPDY:0x136a320] Disconnecting
+       (shrpx_spdy_session.cc:72)
+[INFO] [DSPDY:0x136a320] Closing fd=11
+       (shrpx_spdy_session.cc:103)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 20:34:45 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13cd300] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13cd300] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13cd300] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x13cc880] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x13cc880] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x13cc880] HTTP request headers
+GET /authct/v1/keys/line HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13cd300] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x133ed90] Attaching to DOWNSTREAM:0x13ca340
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [UPSTREAM:0x13cc880] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] Connecting to downstream server
+       (shrpx_spdy_session.cc:393)
+[INFO] [DSPDY:0x136a320] Connection established
+       (shrpx_spdy_session.cc:249)
+[INFO] [DSPDY:0x136a320] Negotiated next protocol: spdy/2
+       (shrpx_spdy_session.cc:1050)
+[INFO] [DCONN:0x133ed90] HTTP request headers
+:scheme: https
+:path: /authct/v1/keys/line
+:method: GET
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Accept-Encoding: gzip, deflate
+Accept: */*
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=1
+content-encoding: gzip
+content-length: 268
+content-type: application/json;charset=ISO-8859-1
+p3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+server: legy
+:status: 200
+:version: HTTP/1.1
+x-lcr: 255
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13ca340] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x13cc880] HTTP response headers
+HTTP/1.0 200 OK
+Content-Encoding: gzip
+Content-Length: 268
+Content-Type: application/json;charset=ISO-8859-1
+P3p: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Server: legy
+X-Lcr: 255
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 20:34:45 2017] 200 0 "GET /authct/v1/keys/line HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=1 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13ca340] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x133ed90] Detaching from DOWNSTREAM:0x13ca340
+       (shrpx_spdy_downstream_connection.cc:118)
+[INFO] [CLIENT_HANDLER:0x13cd300] Pooling downstream connection DCONN:0x133ed90
+       (shrpx_client_handler.cc:294)
+[INFO] [CLIENT_HANDLER:0x13cd300] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13ca340] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13ca340] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [DCONN:0x133ed90] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x133ed90] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13cd300] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+::1 [Mon Jan 16 20:34:46 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x13a63c0] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x13a63c0] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x13a63c0] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [UPSTREAM:0x136a200] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x136a200] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x136a200] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 482
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x13a63c0] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x133ed90] Attaching to DOWNSTREAM:0x13cd260
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x133ed90] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 482
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x136a200] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=3
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x136a200] HTTP response headers
+HTTP/1.0 200 OK
+Content-Type: application/x-thrift;charset=UTF-8
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+::1 [Mon Jan 16 20:34:46 2017] 200 0 "POST /api/v4/TalkService.do HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=3 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x133ed90] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x133ed90] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x13a63c0] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cd260] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cd260] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x13a63c0] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 20:34:47 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x1369f00] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x1369f00] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x12d38c0] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x12d38c0] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x12d38c0] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 22
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x1369f00] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x12f29c0] Attaching to DOWNSTREAM:0x13cd260
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x12f29c0] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 22
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x12d38c0] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=5
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x12d38c0] HTTP response headers
+HTTP/1.0 200 OK
+Content-Type: application/x-thrift;charset=UTF-8
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 20:34:47 2017] 200 0 "POST /api/v4/TalkService.do HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=5 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x12f29c0] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x12f29c0] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cd260] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cd260] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+::1 [Mon Jan 16 20:34:47 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x1369f00] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x1369f00] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x12fa410] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x12fa410] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x12fa410] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 15
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x1369f00] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x12f3e10] Attaching to DOWNSTREAM:0x13cf590
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x12f3e10] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 15
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x12fa410] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=7
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cf590] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x12fa410] HTTP response headers
+HTTP/1.0 200 OK
+Content-Type: application/x-thrift;charset=UTF-8
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+::1 [Mon Jan 16 20:34:47 2017] 200 0 "POST /api/v4/TalkService.do HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=7 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cf590] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x12f3e10] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x12f3e10] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cf590] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cf590] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 20:34:48 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x1369f00] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x1369f00] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x12a8f10] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x12a8f10] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x12a8f10] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 22
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x1369f00] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x133ed90] Attaching to DOWNSTREAM:0x13cf590
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x133ed90] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 22
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x12a8f10] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=9
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cf590] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x12a8f10] HTTP response headers
+HTTP/1.0 200 OK
+Content-Type: application/x-thrift;charset=UTF-8
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+104.238.222.52 [Mon Jan 16 20:34:48 2017] 200 0 "POST /api/v4/TalkService.do HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=9 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cf590] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x133ed90] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x133ed90] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cf590] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cf590] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+::1 [Mon Jan 16 20:34:49 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x1369f00] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x1369f00] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x1330800] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x1330800] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x1330800] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 16
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x1369f00] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x133ed90] Attaching to DOWNSTREAM:0x13cd260
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x133ed90] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 16
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x1330800] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=11
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+
+       (shrpx_spdy_session.cc:848)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response header completed
+       (shrpx_https_upstream.cc:618)
+[INFO] [UPSTREAM:0x1330800] HTTP response headers
+HTTP/1.0 200 OK
+Content-Type: application/x-thrift;charset=UTF-8
+Server: legy
+Connection: close
+
+
+       (shrpx_https_upstream.cc:687)
+::1 [Mon Jan 16 20:34:49 2017] 200 0 "POST /api/v4/TalkService.do HTTP/1.0"
+[INFO] [DSPDY:0x136a320] Stream stream_id=11 is being closed
+       (shrpx_spdy_session.cc:686)
+[INFO] [DOWNSTREAM:0x13cd260] HTTP response completed
+       (shrpx_https_upstream.cc:741)
+[INFO] [DCONN:0x133ed90] Deleting
+       (shrpx_spdy_downstream_connection.cc:59)
+[INFO] [DCONN:0x133ed90] Deleted
+       (shrpx_spdy_downstream_connection.cc:76)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleting
+       (shrpx_client_handler.cc:174)
+[INFO] [DOWNSTREAM:0x13cd260] Deleting
+       (shrpx_downstream.cc:67)
+[INFO] [DOWNSTREAM:0x13cd260] Deleted
+       (shrpx_downstream.cc:77)
+[INFO] [CLIENT_HANDLER:0x1369f00] Deleted
+       (shrpx_client_handler.cc:203)
+[INFO] [LISTEN:0x1393440] Accepted connection. fd=10
+       (shrpx_listen_handler.cc:102)
+104.238.222.52 [Mon Jan 16 20:34:50 2017] ACCEPT
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS handshake completed
+       (shrpx_client_handler.cc:108)
+[INFO] [CLIENT_HANDLER:0x1369f00] No proto negotiated.
+       (shrpx_client_handler.cc:255)
+[INFO] [CLIENT_HANDLER:0x1369f00] Use HTTP/1.1
+       (shrpx_client_handler.cc:259)
+[INFO] [CLIENT_HANDLER:0x1369f00] SSL/TLS session reused
+       (shrpx_client_handler.cc:114)
+[INFO] [UPSTREAM:0x13bc620] HTTP request started
+       (shrpx_https_upstream.cc:78)
+[INFO] [UPSTREAM:0x13bc620] HTTP request headers completed
+       (shrpx_https_upstream.cc:135)
+[INFO] [UPSTREAM:0x13bc620] HTTP request headers
+POST /api/v4/TalkService.do HTTP/1.0
+Host: gd2.line.naver.jp
+Connection: close
+Content-Length: 23
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+
+       (shrpx_https_upstream.cc:156)
+[INFO] [CLIENT_HANDLER:0x1369f00] Downstream connection pool is empty. Create new one
+       (shrpx_client_handler.cc:312)
+[INFO] [DCONN:0x13465d0] Attaching to DOWNSTREAM:0x13cf590
+       (shrpx_spdy_downstream_connection.cc:101)
+[INFO] [DCONN:0x13465d0] HTTP request headers
+:scheme: https
+:path: /api/v4/TalkService.do
+:method: POST
+:version: HTTP/1.1
+:host: gd2.line.naver.jp
+Content-Length: 23
+Content-Type: application/x-thrift
+X-Line-Application: DESKTOPWIN	4.11.2.1298	WINDOWS	6.1.7601-7-x64
+X-Line-Access: EcBbMilo4a8h8jYv4e77.nXLXq1AJrVZWJr8QN7LdDW.DtG+x9+dI9RmnXpwVtCZJLLdVyRnEQZ84HkDPBhE40s=
+User-Agent: DESKTOP:WINDOWS:6.1.7601-7-x64(4.11.2.1298)
+x-forwarded-proto: https
+
+       (shrpx_spdy_downstream_connection.cc:368)
+[INFO] [UPSTREAM:0x13bc620] HTTP request completed
+       (shrpx_https_upstream.cc:227)
+[INFO] [DSPDY:0x136a320] HTTP response headers. stream_id=13
+content-type: application/x-thrift;charset=UTF-8
+server: legy
+:status: 200
+:version: HTTP/1.1
+

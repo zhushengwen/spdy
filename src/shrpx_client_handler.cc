@@ -103,7 +103,7 @@ void upstream_eventcb(bufferevent *bev, short events, void *arg)
     delete handler;
   } else {
     if(events & BEV_EVENT_CONNECTED) {
-      handler->set_tls_handshake(true);
+     handler->set_tls_handshake(true);
       if(LOG_ENABLED(INFO)) {
         CLOG(INFO, handler) << "SSL/TLS handshake completed";
       }
@@ -236,7 +236,9 @@ int ClientHandler::validate_next_proto()
 {
   const unsigned char *next_proto = 0;
   unsigned int next_proto_len;
-  SSL_get0_next_proto_negotiated(ssl_, &next_proto, &next_proto_len);
+SSL_get0_next_proto_negotiated(ssl_, &next_proto, &next_proto_len);
+ //next_proto =(const unsigned char*) "spdy/2";
+ //next_proto_len = 6;
   if(next_proto) {
     if(LOG_ENABLED(INFO)) {
       std::string proto(next_proto, next_proto+next_proto_len);

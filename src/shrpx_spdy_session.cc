@@ -1042,8 +1042,9 @@ int SpdySession::on_connect()
   const unsigned char *next_proto = 0;
   unsigned int next_proto_len;
   if(ssl_ctx_) {
-    SSL_get0_next_proto_negotiated(ssl_, &next_proto, &next_proto_len);
-
+   // SSL_get0_next_proto_negotiated(ssl_, &next_proto, &next_proto_len);
+next_proto =(const unsigned char*) "spdy/2";
+next_proto_len = 6;
     if(LOG_ENABLED(INFO)) {
       std::string proto(next_proto, next_proto+next_proto_len);
       SSLOG(INFO, this) << "Negotiated next protocol: " << proto;
